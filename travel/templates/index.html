@@ -43,7 +43,7 @@
             {% for destination in destinations %}
             <div class="card mx-3">
                <img class="card-img-top"
-                  src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9c/a0/02/eiffel-tower.jpg" alt="France">
+                  src="{{ destination.image }}" alt="{{ destination.name }}">
                <div class="card-body">
                   <h5 class="card-title">{{ destination.name }}</h5>
                   <p class="card-text">{{ destination.description }}
