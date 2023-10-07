@@ -45,8 +45,8 @@
                <img class="card-img-top"
                   src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9c/a0/02/eiffel-tower.jpg" alt="France">
                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  <h5 class="card-title">{{ destination.name }}</h5>
+                  <p class="card-text">{{ destination.description }}
                   </p>
                </div>
                <div class="card-footer"><a href="{{url_for('destination.show', id=destination.id)}}" class ="btn btn-danger"> View Details </a></div>
